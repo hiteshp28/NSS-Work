@@ -526,7 +526,7 @@ figure.snip1390 .profile {
 }
 
 /* Media query for tablets (768px) */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .map,
   .feedback,
   .contact ,
