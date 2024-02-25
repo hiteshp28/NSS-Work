@@ -1,3 +1,7 @@
+*{
+  overflow-x: hidden;
+
+}
 
 .wrapper {
   font-family: Montserrat, sans-serif;
@@ -324,8 +328,10 @@ figure.snip1390 .profile {
   font-family: Montserrat, sans-serif;
 }
 .footer {
-  margin-top: 30px;
   display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
 }
 .map-text {
   line-height: normal;
@@ -504,3 +510,46 @@ figure.snip1390 .profile {
   font-weight: 700;
   font-size: 20px;
 }
+/* Default styles */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.map,
+.feedback,
+.contact {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Media query for tablets (768px) */
+@media (max-width: 768px) {
+  .map,
+  .feedback,
+  .contact ,
+  .collaboration{
+    align-self: center;
+    flex-shrink: inherit;
+    font-size: 14px;
+    font-weight: 100;
+    flex-basis: 100%; /* Adjust as needed */
+  }
+  
+}
+
+/* Media query for mobile devices (576px) */
+/* @media (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .map,
+  .feedback,
+  .contact {
+    flex-basis: 100%; /* Adjust as needed 
+  }
+} */
